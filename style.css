@@ -1,14 +1,22 @@
-*{
+@font-face {
+    font-family: myFirstFont;
+    src:local("RussoOne-Regular.ttf");
+}*{
     margin: 0;
     padding: 0;
+    font-family: myFirstFont;
 }
+
+
 #container{
     height: auto;
     width: auto;
+    
     border: 2px solid black;
 }
 #navcontainer{
     display: flex;
+    align-items: flex-center;
     background: #0065C2;
 }
 .item{
@@ -18,10 +26,10 @@
 }
 
 .menu{
-    flex-grow: 2;
+    flex-grow: 7;
 }
 .button{
-    flex-grow: 2;
+    flex-grow: 1;
 }
 .menu ul li{
     list-style: none;
@@ -30,38 +38,69 @@
 .menu ul li a{
     font-weight: 100;
     text-decoration: none;
-    color: white;
-    padding-right: 10px;
-    font-size: 25px;
-}
-.button{
-    border: 4px solid white;
-    color: ;
-    text-align: center;
-    border-radius: 20px;
-    background:#0065C2 ;
 
-    
-    
+    color: white;
+    padding-right: 40px;
+    font-size: 20px;
 }
-.button:hover{
-    background: white;
-    border: 4px solid white;
-    text-align: center;
-    border-radius: 20px;
-    color: #00065C;
-}
+
 .button a{
+    padding: 10px;
+    border: 2px solid white;
+    padding: 8px 25px;
+    text-align: right;
+    border-radius: 20px;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
     font-weight: bold;
     
 }
-.button a:hover{
+.button a:hover {
     text-decoration: none;
     text-transform: uppercase;
+    color: ;
     color: #0065C2;
     font-weight: bold;
+    background: white;
     
+}
+#section1{
+    display: flex;
+    padding:  40px;
+    padding-bottom: 90px;
+    align-content: space-between;
+    background: #0065C2;
+}
+
+.logo img{
+    max-width: 100px;
+}
+.col2 img{
+    max-width: 500px;
+}
+.col1 h1{
+    color: white;
+    font-weight: bold;
+font-family: myFirstFont;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.col1 p{
+    color: white;
+    font-weight: bold;
+font-family: myFirstFont;
+margin-bottom: 40px;
+    
+}
+.col1{
+    flex-grow: 4;
+    padding-left: 75px;
+}
+.col2{
+    flex-grow: 4;
+}
+.button1 a{
+    text-decoration: none;
+    border: 1px solid white;
 }
